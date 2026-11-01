@@ -1,6 +1,6 @@
-# Frog Quest+ Support Site
+# Frog Quest Support Site
 
-Static GitHub Pages site for Frog Quest+ by Jason Muse.
+Static GitHub Pages site for Frog Quest by Jason Muse.
 
 No build tools, frameworks, analytics, tracking scripts, or third-party requests. The site is plain HTML and CSS, plus the same tiny random-sky script as jasonmuse.github.io.
 
