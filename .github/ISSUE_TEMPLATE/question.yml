@@ -1,0 +1,21 @@
+name: Question or idea
+description: Ask something, or share an idea for Frog Quest+.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ribbit! Ask away, or tell me what you'd love to see :]
+        Support requests are public, so please don't include personal details.
+  - type: textarea
+    id: question
+    attributes:
+      label: What's up?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device (optional)
+      placeholder: e.g. iPhone 16, iPad Air, iPhone Duo

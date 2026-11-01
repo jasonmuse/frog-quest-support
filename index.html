@@ -1,103 +1,131 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frog Quest+ by Jason Muse</title>
-    <meta name="description" content="Frog Quest+ support, privacy policy, and terms of use for the iOS game by Jason Muse.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">+</span>
-          <span>Frog Quest+</span>
-        </a>
-        <div class="nav-links">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="support.html">Support</a>
-          <a href="privacy_policy.html">Privacy</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </nav>
-    </header>
+<!-- Hello! You found the secret note in this HTML too. Ribbit :] -->
 
-    <main>
-      <section class="hero" aria-labelledby="home-title">
-        <div class="hero-copy">
-          <h1 id="home-title">Frog Quest+</h1>
-          <p class="lead">A tiny-but-tough vertical platforming adventure about a brave little froggy climbing the World Tree to claim the crown of the Frog God.</p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a class="button" href="support.html">Get Support</a>
-            <a class="button secondary" href="privacy_policy.html">Privacy Policy</a>
-          </div>
-        </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Frog Quest+ by Jason Muse</title>
+	<meta name="description" content="Frog Quest+ is a tiny-but-tough vertical platformer for iPhone and iPad by Jason Muse. Support, privacy policy, and terms of use.">
+	<meta name="author" content="Jason Muse">
+	<meta name="theme-color" content="#373593">
+	<link rel="canonical" href="https://jasonmuse.github.io/frog-quest-support/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Frog Quest+ by Jason Muse">
+	<meta property="og:description" content="Fling a brave little frog up the World Tree to claim the crown of the Frog God.">
+	<meta property="og:url" content="https://jasonmuse.github.io/frog-quest-support/">
+	<meta property="og:image" content="https://jasonmuse.github.io/frog-quest-support/images/app-frog-quest-icon.jpg">
+	<link rel="icon" href="images/froggy.png">
+	<link rel="apple-touch-icon" href="images/app-frog-quest-icon.jpg">
+	<link rel="preload" href="fonts/lato-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="styles.css">
 
-        <div class="pixel-scene" role="img" aria-label="Pixel art style frog climbing branches on the World Tree">
-          <div class="tree"></div>
-          <div class="platform one"></div>
-          <div class="platform two"></div>
-          <div class="platform three"></div>
-          <div class="frog"></div>
-        </div>
-      </section>
+	<script>
+		// Same trick as my main site: a new sky color on every load.
+		// Refresh the page and see if you get a different color ;]
+		const startColor = { r: 55, g: 53, b: 147 }; // Purple #373593
+		const endColor = { r: 60, g: 86, b: 171 }; // Blue #3C56AB
 
-      <section class="section" aria-labelledby="about-title">
-        <div class="section-header">
-          <h2 id="about-title">Quick hops, longer climbs, better runs.</h2>
-          <p>Play Quest Mode, chase height in Endless Mode, collect coins, unlock skins and hats, and keep trying until you reach the top.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <h3>No login required</h3>
-            <p>Frog Quest+ can be played without creating an account or signing in.</p>
-          </article>
-          <article class="card">
-            <h3>Optional Remove Ads</h3>
-            <p>The optional Remove Ads purchase is processed by Apple and can be restored from the Remove Ads screen.</p>
-          </article>
-          <article class="card">
-            <h3>Support pages</h3>
-            <p>Use this site for support information, the privacy policy, and the terms of use for Frog Quest+.</p>
-          </article>
-        </div>
-      </section>
+		function randomColor(start, end) {
+			const factor = Math.random();
+			const r = Math.round(start.r + factor * (end.r - start.r));
+			const g = Math.round(start.g + factor * (end.g - start.g));
+			const b = Math.round(start.b + factor * (end.b - start.b));
+			return `rgb(${r}, ${g}, ${b})`;
+		}
 
-      <section class="section" aria-labelledby="links-title">
-        <div class="section-header">
-          <h2 id="links-title">App information</h2>
-          <p>These pages are provided for App Store users and App Review.</p>
-        </div>
-        <div class="grid two">
-          <article class="card">
-            <h3>Support</h3>
-            <p>Restore purchases, billing notes, login status, and troubleshooting steps.</p>
-            <div class="link-row">
-              <a class="button secondary" href="support.html">Open Support</a>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Privacy and Terms</h3>
-            <p>Read how Frog Quest+ handles app data, ads, purchases, and app usage terms.</p>
-            <div class="link-row">
-              <a class="button secondary" href="privacy_policy.html">Privacy</a>
-              <a class="button secondary" href="terms_of_use.html">Terms</a>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.body.style.backgroundColor = randomColor(startColor, endColor);
+		});
+	</script>
+</head>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span>Frog Quest+ by Jason Muse</span>
-        <div class="footer-links">
-          <a href="support.html">Support</a>
-          <a href="privacy_policy.html">Privacy</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+<body>
+	<div id="main-container">
+		<main>
+			<nav class="top-nav" aria-label="Frog Quest+ pages">
+				<a class="pill" href="index.html" aria-current="page">Home</a>
+				<a class="pill" href="support.html">Support</a>
+				<a class="pill" href="privacy_policy.html">Privacy</a>
+				<a class="pill" href="terms_of_use.html">Terms</a>
+			</nav>
+
+			<div class="art">
+				<img src="images/frog-quest-title.webp" alt="Frog Quest" width="750" height="375" fetchpriority="high">
+			</div>
+
+			<div class="text">
+				<span>A tiny-but-tough vertical platformer about a brave little froggy climbing the World Tree to claim
+					the crown of the Frog God.</span>
+			</div>
+
+			<div class="button-row">
+				<a class="app-store-button" href="https://apps.apple.com/us/app/frog-quest/id6761079354" target="_blank"
+					rel="noopener noreferrer">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+						<path d="M16.6 12.2c0-2.2 1.8-3.2 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.8-.4 6.9 1.1 9.1.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.2-2.5 1.2-2.6-.1-.1-2.7-1-2.7-3.8zM14.4 5.8c.6-.8 1-1.8.9-2.8-.9 0-2 .6-2.6 1.3-.6.7-1 1.8-.9 2.7 1 .1 2-.5 2.6-1.2z" />
+					</svg>
+					<span class="app-store-copy"><span>Download on the</span><strong>App Store</strong></span>
+				</a>
+				<a class="big-pill" href="support.html">Get Support</a>
+			</div>
+
+			<section class="showcase" aria-labelledby="about-heading">
+				<div class="phone-preview" aria-hidden="true">
+					<div class="screenshot-track">
+						<img src="images/app-frog-quest-preview.webp" alt="" width="460" height="996" decoding="async">
+						<img src="images/app-frog-quest-preview-2.webp" alt="" width="460" height="996" decoding="async">
+						<img src="images/app-frog-quest-preview-3.webp" alt="" width="460" height="996" decoding="async">
+						<img src="images/app-frog-quest-preview-4.webp" alt="" width="460" height="996" decoding="async">
+						<img src="images/app-frog-quest-preview.webp" alt="" width="460" height="996" decoding="async">
+					</div>
+				</div>
+				<div class="showcase-copy">
+					<div class="app-header">
+						<img class="app-icon" src="images/app-frog-quest-icon.jpg" alt="Frog Quest+ app icon" width="512"
+							height="512" loading="lazy" decoding="async">
+						<div>
+							<p class="app-label">iOS Game</p>
+							<h2 id="about-heading">Frog Quest+</h2>
+						</div>
+					</div>
+					<p>Pull back, let go, and fling your frog from branch to branch. Meet the frogs who live in the
+						tree, light your way through the dark parts, and keep climbing until you reach the top.</p>
+					<p>Got a minute? Endless mode stacks platforms forever. How high can you get?</p>
+					<ul class="tags" aria-label="Highlights">
+						<li>Quest mode</li>
+						<li>Endless mode</li>
+						<li>Hats &amp; skins</li>
+						<li>No account needed</li>
+						<li>iPhone + iPad</li>
+					</ul>
+				</div>
+			</section>
+
+			<h2 class="section-title">HELP</h2>
+			<div class="card-grid">
+				<a class="card" href="support.html">
+					<h3>Support</h3>
+					<p>FAQ, Remove Ads and restoring purchases, and how to reach me.</p>
+				</a>
+				<a class="card" href="privacy_policy.html">
+					<h3>Privacy</h3>
+					<p>What the game collects, how the ads work, and your choices.</p>
+				</a>
+				<a class="card" href="terms_of_use.html">
+					<h3>Terms</h3>
+					<p>The ground rules for playing Frog Quest+.</p>
+				</a>
+			</div>
+
+			<footer class="site-footer">
+				<span class="made-by"><img class="pixel" src="images/froggy-crowned.png" alt="" width="64" height="73">
+					made by muse</span><br>
+				<a href="https://jasonmuse.github.io/">More games &amp; apps by Jason Muse</a><br>
+				<span>Copyright &copy; 2026 Jason Muse. All rights reserved.</span>
+			</footer>
+		</main>
+	</div>
+</body>
+
 </html>

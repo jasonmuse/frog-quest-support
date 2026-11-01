@@ -2,15 +2,23 @@
 
 Static GitHub Pages site for Frog Quest+ by Jason Muse.
 
-No build tools, frameworks, analytics, tracking scripts, external fonts, or dependencies are used. The site is plain HTML and CSS.
+No build tools, frameworks, analytics, tracking scripts, or third-party requests. The site is plain HTML and CSS, plus the same tiny random-sky script as jasonmuse.github.io.
+
+## Look
+
+It matches jasonmuse.github.io: a purple-to-blue background picked on each load, Lato (self-hosted in `fonts/`), the dark rounded panel, and the EarthBound squiggle behind section titles. The Frog Quest touches are the game's own title logo, the frog-green app card, the App Store screenshot reel, and Lil Froggy in his crown hopping in the footer.
 
 ## Pages
 
-- `index.html`
-- `support.html`
-- `privacy_policy.html`
-- `terms_of_use.html`
-- `styles.css`
+- `index.html`: home (title art, App Store link, screenshots, links)
+- `support.html`: contact plus the FAQ (jumping, saves, unlocks, Endless, Remove Ads/restore, tracking, refunds, iPad/iPhone Duo, troubleshooting)
+- `privacy_policy.html`: same text as the in-game `legal/privacy_policy.txt` in the game repo; keep them in sync
+- `terms_of_use.html`: same text as the in-game `legal/terms_of_use.txt`
+- `styles.css`, `fonts/`, `images/`
+
+## Support requests
+
+"Open a Support Request" goes to this repo's GitHub Issues, with forms in `.github/ISSUE_TEMPLATE/` ("Something's not working" and "Question or idea"). Billing links to Apple's reportaproblem.apple.com. Issues are public, and the forms say so.
 
 ## Current GitHub Pages URLs
 

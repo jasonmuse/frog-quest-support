@@ -1,36 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy - Frog Quest+</title>
-    <meta name="description" content="Privacy Policy for Frog Quest+, the iOS game by Jason Muse.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">+</span>
-          <span>Frog Quest+</span>
-        </a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="support.html">Support</a>
-          <a href="privacy_policy.html" aria-current="page">Privacy</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </nav>
-    </header>
+<!-- Nothing sneaky in here, just the privacy policy. Pinky promise :] -->
 
-    <main class="content-page">
-      <section class="page-title" aria-labelledby="privacy-title">
-        <h1 id="privacy-title">Privacy Policy</h1>
-        <p>This Privacy Policy describes how MUSE ("we", "us", "our") handles information when you use the mobile application Frog Quest+ (the "App"). By using the App, you agree to this policy alongside our Terms of Use.</p>
-        <p class="meta">Effective date: 11 May 2026</p>
-      </section>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Privacy Policy - Frog Quest+</title>
+	<meta name="description" content="Privacy Policy for Frog Quest+, the iOS game by Jason Muse.">
+	<meta name="author" content="Jason Muse">
+	<meta name="theme-color" content="#373593">
+	<link rel="canonical" href="https://jasonmuse.github.io/frog-quest-support/privacy_policy.html">
+	<link rel="icon" href="images/froggy.png">
+	<link rel="apple-touch-icon" href="images/app-frog-quest-icon.jpg">
+	<link rel="preload" href="fonts/lato-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="styles.css">
 
-      <section class="document" aria-label="Privacy policy">
+	<script>
+		// A new sky color on every load, like my main site ;]
+		const startColor = { r: 55, g: 53, b: 147 }; // Purple #373593
+		const endColor = { r: 60, g: 86, b: 171 }; // Blue #3C56AB
+
+		function randomColor(start, end) {
+			const factor = Math.random();
+			const r = Math.round(start.r + factor * (end.r - start.r));
+			const g = Math.round(start.g + factor * (end.g - start.g));
+			const b = Math.round(start.b + factor * (end.b - start.b));
+			return `rgb(${r}, ${g}, ${b})`;
+		}
+
+		document.addEventListener("DOMContentLoaded", () => {
+			document.body.style.backgroundColor = randomColor(startColor, endColor);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main-container">
+		<main>
+			<nav class="top-nav" aria-label="Frog Quest+ pages">
+				<a class="pill" href="index.html">Home</a>
+				<a class="pill" href="support.html">Support</a>
+				<a class="pill" href="privacy_policy.html" aria-current="page">Privacy</a>
+				<a class="pill" href="terms_of_use.html">Terms</a>
+			</nav>
+
+			<h1 class="section-title wide">PRIVACY POLICY</h1>
+
+			<section class="document" aria-label="Privacy policy">
+				<p>This Privacy Policy describes how MUSE ("we", "us", "our") handles information when you use the mobile application Frog Quest+ (the "App"). By using the App, you agree to this policy alongside our Terms of Use.</p>
+				<p class="meta">Effective date: 1 November 2026</p>
+
         <article class="info-block">
           <h2>1. Who this applies to</h2>
           <p>The App is published for phones and tablets. If you use the App, this policy applies to you. If you do not agree, please discontinue use.</p>
@@ -97,25 +116,23 @@
 
         <article class="info-block">
           <h2>10. Contact</h2>
-          <p>Privacy questions concerning Frog Quest+ may be routed through the Developer contact options shown on our App Store product page ("Developer Website", "Privacy Policy Link", Support). If those fields are insufficient, cite "Frog Quest+ privacy enquiry" plus your locale.</p>
+          <p>Privacy questions about Frog Quest+ can be sent through our <a href="support.html">support page</a>, where you can open a support request. Please mention "Frog Quest+ privacy enquiry" and your locale. Support requests are public, so please do not include personal details in them.</p>
           <p class="meta">End of document.</p>
           <div class="link-row">
             <a class="button secondary" href="support.html">Support</a>
             <a class="button secondary" href="terms_of_use.html">Terms of Use</a>
           </div>
         </article>
-      </section>
-    </main>
+			</section>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span>Frog Quest+ by Jason Muse</span>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="support.html">Support</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+			<footer class="site-footer">
+				<span class="made-by"><img class="pixel" src="images/froggy-crowned.png" alt="" width="64" height="73">
+					made by muse</span><br>
+				<a href="https://jasonmuse.github.io/">More games &amp; apps by Jason Muse</a><br>
+				<span>Copyright &copy; 2026 Jason Muse. All rights reserved.</span>
+			</footer>
+		</main>
+	</div>
+</body>
+
 </html>

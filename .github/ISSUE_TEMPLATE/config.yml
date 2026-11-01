@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Refunds and billing (handled by Apple)
+    url: https://reportaproblem.apple.com/
+    about: Apple handles all App Store payments, receipts and refunds for Frog Quest+.
+  - name: Frog Quest+ FAQ
+    url: https://jasonmuse.github.io/frog-quest-support/support.html
+    about: Quick answers about jumping, saves, unlocks, Remove Ads and the tracking prompt.

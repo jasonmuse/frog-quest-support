@@ -1,89 +1,184 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Support - Frog Quest+</title>
-    <meta name="description" content="Support information for Frog Quest+, the iOS game by Jason Muse.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">+</span>
-          <span>Frog Quest+</span>
-        </a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="support.html" aria-current="page">Support</a>
-          <a href="privacy_policy.html">Privacy</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </nav>
-    </header>
+<!-- Psst. If you're reading this, you're exactly the kind of person who finds the wizard. -->
 
-    <main class="content-page">
-      <section class="page-title" aria-labelledby="support-title">
-        <h1 id="support-title">Support</h1>
-        <p>Help and release information for Frog Quest+, an iOS game by Jason Muse.</p>
-      </section>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Support | Frog Quest+</title>
+	<meta name="description" content="Help for Frog Quest+: how to contact the developer, Remove Ads and restoring purchases, ads and tracking, saves, unlocks, and troubleshooting.">
+	<meta name="author" content="Jason Muse">
+	<meta name="theme-color" content="#373593">
+	<link rel="canonical" href="https://jasonmuse.github.io/frog-quest-support/support.html">
+	<link rel="icon" href="images/froggy.png">
+	<link rel="apple-touch-icon" href="images/app-frog-quest-icon.jpg">
+	<link rel="preload" href="fonts/lato-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="styles.css">
 
-      <section class="document" aria-label="Support information">
-        <article class="info-block">
-          <h2>App basics</h2>
-          <ul>
-            <li>App: Frog Quest+</li>
-            <li>Developer: Jason Muse</li>
-            <li>Current App Store version: 1.0</li>
-            <li>Frog Quest+ does not require login or an account.</li>
-          </ul>
-        </article>
+	<script>
+		// A new sky color on every load, like my main site ;]
+		const startColor = { r: 55, g: 53, b: 147 }; // Purple #373593
+		const endColor = { r: 60, g: 86, b: 171 }; // Blue #3C56AB
 
-        <article class="info-block">
-          <h2>Remove Ads purchase</h2>
-          <p>The optional Remove Ads purchase is processed by Apple through the App Store. Apple handles billing, receipts, taxes, and refunds for App Store purchases.</p>
-          <h3>If Remove Ads does not apply</h3>
-          <ol>
-            <li>Open Frog Quest+.</li>
-            <li>Go to the Remove Ads screen.</li>
-            <li>Tap Restore Purchases.</li>
-            <li>Make sure the device is signed in with the same Apple ID that bought Remove Ads.</li>
-            <li>If the purchase still does not restore, restart the app and try again.</li>
-          </ol>
-          <p class="meta">Product ID: com.muse.frogquest.removeads</p>
-        </article>
+		function randomColor(start, end) {
+			const factor = Math.random();
+			const r = Math.round(start.r + factor * (end.r - start.r));
+			const g = Math.round(start.g + factor * (end.g - start.g));
+			const b = Math.round(start.b + factor * (end.b - start.b));
+			return `rgb(${r}, ${g}, ${b})`;
+		}
 
-        <article class="info-block">
-          <h2>Ads</h2>
-          <p>Frog Quest+ uses Google AdMob for banner and interstitial ads. If live ad fill is unavailable, gameplay should not be blocked.</p>
-        </article>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.body.style.backgroundColor = randomColor(startColor, endColor);
+		});
+	</script>
+</head>
 
-        <article class="info-block">
-          <h2>Refunds and billing</h2>
-          <p>For App Store purchase refunds, receipt issues, tax questions, or payment problems, use Apple Support or the purchase history tools for the Apple ID that made the purchase.</p>
-        </article>
+<body>
+	<div id="main-container">
+		<main>
+			<nav class="top-nav" aria-label="Frog Quest+ pages">
+				<a class="pill" href="index.html">Home</a>
+				<a class="pill" href="support.html" aria-current="page">Support</a>
+				<a class="pill" href="privacy_policy.html">Privacy</a>
+				<a class="pill" href="terms_of_use.html">Terms</a>
+			</nav>
 
-        <article class="info-block">
-          <h2>Reporting an issue</h2>
-          <p>For support, use the developer contact options shown on the Frog Quest+ App Store product page. Including the device model, iOS version, Frog Quest+ version, and a short description of what happened will make the report easier to review.</p>
-          <div class="link-row">
-            <a class="button secondary" href="privacy_policy.html">Privacy Policy</a>
-            <a class="button secondary" href="terms_of_use.html">Terms of Use</a>
-          </div>
-        </article>
-      </section>
-    </main>
+			<h1 class="section-title">SUPPORT</h1>
+			<p class="intro">Stuck on a branch? Here's how to get unstuck :]</p>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span>Frog Quest+ by Jason Muse</span>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="privacy_policy.html">Privacy</a>
-          <a href="terms_of_use.html">Terms</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+			<section class="contact-card" aria-labelledby="contact-heading">
+				<h2 id="contact-heading">Contact me</h2>
+				<p>Found a bug, lost a purchase, or have an idea? Open a support request and it comes straight to me,
+					the developer.</p>
+				<div class="button-row">
+					<a class="big-pill go" href="https://github.com/jasonmuse/frog-quest-support/issues/new/choose"
+						target="_blank" rel="noopener noreferrer">Open a Support Request</a>
+				</div>
+				<p class="small-text">Requests are on GitHub (a free account is needed to post), and they're public, so
+					please don't include personal details. Helpful to mention:</p>
+				<ul>
+					<li>Your device, like iPhone 16, iPad Air, or iPhone Duo</li>
+					<li>Your iOS version (Settings &rsaquo; General &rsaquo; About)</li>
+					<li>Your Frog Quest+ version (Settings &rsaquo; General &rsaquo; iPhone Storage &rsaquo; Frog Quest+)</li>
+					<li>What happened, and what you were doing right before</li>
+				</ul>
+			</section>
+
+			<h2 class="section-title">FAQ</h2>
+			<section class="faq" aria-label="Frequently asked questions">
+				<details>
+					<summary>How do I jump?</summary>
+					<div class="answer">
+						<p>Like a slingshot: put your finger down, pull back the opposite way from where you want to
+							go, and let go. The farther you pull, the bigger the jump, and the arc shows where you're
+							headed. You can tap pause in the top corner anytime.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Where is my progress saved?</summary>
+					<div class="answer">
+						<p>Right on your device. There's no account or cloud save, so deleting Frog Quest+ also deletes
+							your progress.</p>
+						<p>Beating the game clears your quest save so you can climb again from the bottom, and you keep
+							everything you've unlocked.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>How do I unlock hats and skins?</summary>
+					<div class="answer">
+						<ul>
+							<li>Reach the top of the World Tree to earn the crown.</li>
+							<li>Hit scores of 25, 50 and 100 in Endless mode for new looks.</li>
+							<li>A couple more are hidden in the World Tree. Keep your eyes open ;]</li>
+						</ul>
+						<p>To change your look, tap the crown on the title screen, or Wardrobe in the pause menu.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>What is Endless mode?</summary>
+					<div class="answer">
+						<p>Tap the &infin; button on the title screen for a climb that never ends. Every new platform you
+							land on is +1. From version 1.1, if you fall you can keep going once per run by watching a short
+							ad (or for free with Remove Ads).</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Remove Ads, and restoring a purchase</summary>
+					<div class="answer">
+						<p>Remove Ads is a one-time purchase that turns off the banner and full-screen ads. Find it in the
+							pause menu, or on the Endless game over screen. Apple handles the payment.</p>
+						<p>If Remove Ads doesn't apply (for example after reinstalling, or on a new device):</p>
+						<ol>
+							<li>Make sure you're signed in with the same Apple ID that bought it.</li>
+							<li>Open the Remove Ads screen and tap <strong>Restore Purchases</strong>.</li>
+							<li>Still nothing? Close the game fully, reopen it, and restore again. Then open a support
+								request.</li>
+						</ol>
+						<p class="meta">Product ID: com.muse.frogquest.removeads</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Why does the game ask to track me?</summary>
+					<div class="answer">
+						<p>Frog Quest+ shows ads from Google AdMob, which keeps the game free. iOS asks whether the game
+							may use your device's advertising identifier. Allowing it makes the ads more relevant. If you
+							choose Ask App Not to Track, you'll still see ads, just less personalized ones.</p>
+						<p>You can change it anytime in Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking. More in
+							the <a href="privacy_policy.html">Privacy Policy</a>.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Refunds and billing</summary>
+					<div class="answer">
+						<p>Apple handles all App Store payments, so refunds, receipts and billing questions go through
+							Apple. You can request a refund at <a href="https://reportaproblem.apple.com/" target="_blank"
+								rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Does it work on iPad and iPhone Duo?</summary>
+					<div class="answer">
+						<p>Yes, Frog Quest+ runs on iPhone and iPad. An update is on the way that fills iPhone Duo's inner
+							screen edge to edge and lets you play story mode upright, including on the cover screen.</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Something's not working</summary>
+					<div class="answer">
+						<ol>
+							<li>Update to the latest version from the App Store.</li>
+							<li>Close the game fully and open it again.</li>
+							<li>Ads and purchases need an internet connection; the game itself plays fine offline.</li>
+						</ol>
+						<p>Still broken? <a href="https://github.com/jasonmuse/frog-quest-support/issues/new/choose"
+								target="_blank" rel="noopener noreferrer">Open a support request</a> and tell me what
+							happened.</p>
+					</div>
+				</details>
+			</section>
+
+			<div class="button-row">
+				<a class="big-pill" href="privacy_policy.html">Privacy Policy</a>
+				<a class="big-pill" href="terms_of_use.html">Terms of Use</a>
+			</div>
+
+			<footer class="site-footer">
+				<span class="made-by"><img class="pixel" src="images/froggy-crowned.png" alt="" width="64" height="73">
+					made by muse</span><br>
+				<a href="https://jasonmuse.github.io/">More games &amp; apps by Jason Muse</a><br>
+				<span>Copyright &copy; 2026 Jason Muse. All rights reserved.</span>
+			</footer>
+		</main>
+	</div>
+</body>
+
 </html>

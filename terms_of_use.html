@@ -1,36 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terms of Use - Frog Quest+</title>
-    <meta name="description" content="Terms of Use for Frog Quest+, the iOS game by Jason Muse.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">+</span>
-          <span>Frog Quest+</span>
-        </a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="support.html">Support</a>
-          <a href="privacy_policy.html">Privacy</a>
-          <a href="terms_of_use.html" aria-current="page">Terms</a>
-        </div>
-      </nav>
-    </header>
+<!-- You read the HTML of the terms page. Respect. -->
 
-    <main class="content-page">
-      <section class="page-title" aria-labelledby="terms-title">
-        <h1 id="terms-title">Terms of Use</h1>
-        <p>End User Licence Agreement for Frog Quest+.</p>
-        <p class="meta">Effective date: 11 May 2026</p>
-      </section>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Terms of Use - Frog Quest+</title>
+	<meta name="description" content="Terms of Use for Frog Quest+, the iOS game by Jason Muse.">
+	<meta name="author" content="Jason Muse">
+	<meta name="theme-color" content="#373593">
+	<link rel="canonical" href="https://jasonmuse.github.io/frog-quest-support/terms_of_use.html">
+	<link rel="icon" href="images/froggy.png">
+	<link rel="apple-touch-icon" href="images/app-frog-quest-icon.jpg">
+	<link rel="preload" href="fonts/lato-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="styles.css">
 
-      <section class="document" aria-label="Terms of use">
+	<script>
+		// A new sky color on every load, like my main site ;]
+		const startColor = { r: 55, g: 53, b: 147 }; // Purple #373593
+		const endColor = { r: 60, g: 86, b: 171 }; // Blue #3C56AB
+
+		function randomColor(start, end) {
+			const factor = Math.random();
+			const r = Math.round(start.r + factor * (end.r - start.r));
+			const g = Math.round(start.g + factor * (end.g - start.g));
+			const b = Math.round(start.b + factor * (end.b - start.b));
+			return `rgb(${r}, ${g}, ${b})`;
+		}
+
+		document.addEventListener("DOMContentLoaded", () => {
+			document.body.style.backgroundColor = randomColor(startColor, endColor);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main-container">
+		<main>
+			<nav class="top-nav" aria-label="Frog Quest+ pages">
+				<a class="pill" href="index.html">Home</a>
+				<a class="pill" href="support.html">Support</a>
+				<a class="pill" href="privacy_policy.html">Privacy</a>
+				<a class="pill" href="terms_of_use.html" aria-current="page">Terms</a>
+			</nav>
+
+			<h1 class="section-title wide">TERMS OF USE</h1>
+
+			<section class="document" aria-label="Terms of use">
+				<p>End User Licence Agreement for Frog Quest+.</p>
+				<p class="meta">Effective date: 11 May 2026</p>
+
         <article class="info-block">
           <h2>Please read these terms before using the application</h2>
           <p>By downloading, installing, or using Frog Quest+ (the "App"), you agree to these Terms. If you supervise a minor who uses the App, you accept these Terms on their behalf. If you do not agree, do not use the App.</p>
@@ -119,18 +138,16 @@
             <a class="button secondary" href="privacy_policy.html">Privacy Policy</a>
           </div>
         </article>
-      </section>
-    </main>
+			</section>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span>Frog Quest+ by Jason Muse</span>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="support.html">Support</a>
-          <a href="privacy_policy.html">Privacy</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+			<footer class="site-footer">
+				<span class="made-by"><img class="pixel" src="images/froggy-crowned.png" alt="" width="64" height="73">
+					made by muse</span><br>
+				<a href="https://jasonmuse.github.io/">More games &amp; apps by Jason Muse</a><br>
+				<span>Copyright &copy; 2026 Jason Muse. All rights reserved.</span>
+			</footer>
+		</main>
+	</div>
+</body>
+
 </html>
